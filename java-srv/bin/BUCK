@@ -1,0 +1,8 @@
+load("@prelude//decls:java_rules.bzl", "java_rules")
+
+java_binary(
+    name = "cli",
+    main_class = "example.Main",
+    visibility = ["PUBLIC"]
+)
+

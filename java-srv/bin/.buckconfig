@@ -1,0 +1,20 @@
+[repositories]
+root = .
+prelude = prelude
+shim = shim
+toolchains = toolchains
+none = none
+
+[repository_aliases]
+config = prelude
+fbcode = none
+fbsource = none
+buck = none
+
+[java]
+src_roots = java, src, main, resources
+source_level = 8
+target_level = 8
+
+[parser]
+target_platform_detector_spec = target:root//...->prelude//platforms:default
